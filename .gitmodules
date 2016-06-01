@@ -25,3 +25,6 @@
 [submodule "ranger/.ranger"]
 	path = ranger/.ranger
 	url = https://github.com/hut/ranger.git
+[submodule "vim/.vim/bundle/YouCompleteMe"]
+	path = vim/.vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
