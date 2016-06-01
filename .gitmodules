@@ -19,3 +19,6 @@
 [submodule "vim/.vim/bundle/vim-session"]
 	path = vim/.vim/bundle/vim-session
 	url = https://github.com/xolox/vim-session.git
+[submodule "fzf/.fzf"]
+	path = fzf/.fzf
+	url = https://github.com/junegunn/fzf.git
