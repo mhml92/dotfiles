@@ -22,3 +22,6 @@
 [submodule "zsh/.oh-my-zsh"]
 	path = zsh/.oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "ranger/.ranger"]
+	path = ranger/.ranger
+	url = https://github.com/hut/ranger.git

@@ -83,19 +83,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-ranger-cd() {
-   tempfile=$(mktemp)
-   ranger --choosedir="$tempfile" "${@:-$(pwd)}" < $TTY
-   test -f "$tempfile" &&
-      if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
-         cd -- "$(cat "$tempfile")"
-      fi
-      rm -f -- "$tempfile"
-   }
-
-
-alias ranger="ranger-cd"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+alias ranger='source ~/.ranger/ranger.py ~/.ranger/ranger.py' 
 
 source .dotfiles/vim/.vim/bundle/gruvbox/gruvbox_256palette.sh
