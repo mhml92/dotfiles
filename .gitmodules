@@ -1,11 +1,9 @@
 [submodule "zsh/.oh-my-zsh"]
 	path = zsh/.oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
-
 [submodule "vim/.vim/bundle/ctrlp.vim"]
 	path = vim/.vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
-
 [submodule "vim/.vim/bundle/gruvbox"]
 	path = vim/.vim/bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
@@ -18,3 +16,6 @@
 [submodule "vim/.vim/bundle/vim-misc"]
 	path = vim/.vim/bundle/vim-misc
 	url = https://github.com/xolox/vim-misc.git
+[submodule "vim/.vim/bundle/vim-session"]
+	path = vim/.vim/bundle/vim-session
+	url = https://github.com/xolox/vim-session.git
