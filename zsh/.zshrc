@@ -98,4 +98,4 @@ alias ranger="ranger-cd"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
-source .vim/bundle/gruvbox/gruvbox_256palette.sh
+source .dotfiles/vim/.vim/bundle/gruvbox/gruvbox_256palette.sh
