@@ -83,6 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ranger='source ~/.ranger/ranger.py ~/.ranger/ranger.py' 
+alias ranger='source ~/.dotfiles/ranger/.ranger/ranger.py ~/.dotfiles/ranger/.ranger/ranger.py' 
+alias tmux='tmux -2'
 
 source .dotfiles/vim/.vim/bundle/gruvbox/gruvbox_256palette.sh
