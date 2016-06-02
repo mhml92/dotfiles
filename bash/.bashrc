@@ -114,4 +114,5 @@ if ! shopt -oq posix; then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-alias='source ~/.ranger/ranger.py ~/.ranger/ranger.py'
+alias ranger='source ~/.ranger/ranger.py ~/.ranger/ranger.py'
+alias tmux='tmux -2'
