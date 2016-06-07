@@ -1,8 +1,10 @@
-" ~/.vim/sessions/speciale.vim:
+" ~/.dotfiles/vim/.vim/sessions/speciale.vim:
 " Vim session script.
-" Created by session.vim 2.7 on 30 May 2016 at 21:42:53.
+" Created by session.vim 2.13.1 on 05 June 2016 at 22:57:05.
 " Open this file in Vim and run :source % to restore your session.
 
+set guioptions=aegimrLtT
+silent! set guifont=
 if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
@@ -26,7 +28,7 @@ badd +47 src/TransClust.cpp
 badd +1 src/program.cpp
 badd +1 ~/Dropbox/Datalogi/Speciale/code/testProject/src/main.cpp
 badd +1 /var/www/html/costdata/src/Channel
-badd +61 include/TransClust.hpp
+badd +31 include/TransClust.hpp
 badd +1 include/ConnectedComponent.hpp
 badd +1 src/ConnectedComponent.cpp
 badd +1 include/TriangularMatrix.hpp
@@ -43,7 +45,7 @@ badd +632 lib/tclap/include/tclap/CmdLine.h
 badd +121 lib/tclap/include/tclap/ValueArg.h
 badd +64 lib/tclap/include/tclap/UnlabeledValueArg.h
 badd +1 include/ClusteringResult.hpp
-badd +22 include/FPT.hpp
+badd +59 include/FPT.hpp
 badd +1 src/FTP.cpp
 badd +13 src/FTP_old.cpp
 badd +1 src/FPT.cpp
@@ -64,7 +66,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 13 - ((12 * winheight(0) + 34) / 69)
+let s:l = 13 - ((12 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -85,7 +87,7 @@ set nosplitright
 wincmd t
 set winheight=1 winwidth=1
 exe 'vert 1resize ' . ((&columns * 84 + 136) / 272)
-exe '2resize ' . ((&lines * 3 + 36) / 73)
+exe '2resize ' . ((&lines * 4 + 36) / 73)
 exe 'vert 2resize ' . ((&columns * 187 + 136) / 272)
 exe '3resize ' . ((&lines * 65 + 36) / 73)
 exe 'vert 3resize ' . ((&columns * 187 + 136) / 272)
@@ -99,11 +101,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 60 - ((59 * winheight(0) + 34) / 69)
+let s:l = 61 - ((60 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-60
+61
 normal! 025|
 wincmd w
 argglobal
@@ -128,15 +130,15 @@ setlocal fml=1
 setlocal fdn=20
 setlocal nofen
 silent! normal! zE
-let s:l = 47 - ((15 * winheight(0) + 32) / 65)
+let s:l = 79 - ((46 * winheight(0) + 32) / 65)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-47
-normal! 055|
+79
+normal! 0
 wincmd w
 exe 'vert 1resize ' . ((&columns * 84 + 136) / 272)
-exe '2resize ' . ((&lines * 3 + 36) / 73)
+exe '2resize ' . ((&lines * 4 + 36) / 73)
 exe 'vert 2resize ' . ((&columns * 187 + 136) / 272)
 exe '3resize ' . ((&lines * 65 + 36) / 73)
 exe 'vert 3resize ' . ((&columns * 187 + 136) / 272)
@@ -162,7 +164,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 34) / 69)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -180,11 +182,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 11 - ((10 * winheight(0) + 34) / 69)
+let s:l = 21 - ((20 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-11
+21
 normal! 0
 wincmd w
 exe 'vert 1resize ' . ((&columns * 84 + 136) / 272)
@@ -211,7 +213,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 59 - ((15 * winheight(0) + 34) / 69)
+let s:l = 59 - ((34 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -229,14 +231,13 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 195 - ((60 * winheight(0) + 34) / 69)
+let s:l = 63 - ((62 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-195
+63
 normal! 013|
 wincmd w
-2wincmd w
 exe 'vert 1resize ' . ((&columns * 136 + 136) / 272)
 exe 'vert 2resize ' . ((&columns * 135 + 136) / 272)
 tabedit include/ClusteringResult.hpp
@@ -255,13 +256,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 34) / 69)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
 normal! 0
-2wincmd w
 tabedit include/FindConnectedComponents.hpp
 set splitbelow splitright
 wincmd _ | wincmd |
@@ -284,7 +284,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 39 - ((38 * winheight(0) + 34) / 69)
+let s:l = 39 - ((38 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -302,14 +302,13 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 33 - ((7 * winheight(0) + 34) / 69)
+let s:l = 33 - ((7 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 33
 normal! 0
 wincmd w
-2wincmd w
 exe 'vert 1resize ' . ((&columns * 84 + 136) / 272)
 exe 'vert 2resize ' . ((&columns * 187 + 136) / 272)
 tabedit include/FORCE.hpp
@@ -334,7 +333,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 34) / 69)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -361,14 +360,13 @@ silent! normal! zo
 silent! normal! zo
 227
 silent! normal! zo
-let s:l = 99 - ((46 * winheight(0) + 34) / 69)
+let s:l = 99 - ((47 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 99
 normal! 0
 wincmd w
-2wincmd w
 exe 'vert 1resize ' . ((&columns * 84 + 136) / 272)
 exe 'vert 2resize ' . ((&columns * 187 + 136) / 272)
 tabedit include/ConnectedComponent.hpp
@@ -393,7 +391,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 34) / 69)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -411,14 +409,13 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 34) / 69)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
 normal! 0
 wincmd w
-2wincmd w
 exe 'vert 1resize ' . ((&columns * 204 + 136) / 272)
 exe 'vert 2resize ' . ((&columns * 67 + 136) / 272)
 tabedit include/TriangularMatrix.hpp
@@ -443,7 +440,7 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 34) / 69)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -461,17 +458,16 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 34) / 69)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
 normal! 0
 wincmd w
-2wincmd w
 exe 'vert 1resize ' . ((&columns * 204 + 136) / 272)
 exe 'vert 2resize ' . ((&columns * 67 + 136) / 272)
-tabnext 4
+tabnext 2
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -487,8 +483,8 @@ let &so = s:so_save | let &siso = s:siso_save
 " Everything down here is generated by vim-session (not supported
 " by :mksession out of the box).
 
-2wincmd w
-tabnext 4
+1wincmd w
+tabnext 2
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

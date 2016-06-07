@@ -87,3 +87,5 @@ alias ranger='source ~/.dotfiles/ranger/.ranger/ranger.py ~/.dotfiles/ranger/.ra
 alias tmux='tmux -2'
 
 source .dotfiles/vim/.vim/bundle/gruvbox/gruvbox_256palette.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
