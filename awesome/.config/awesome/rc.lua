@@ -46,11 +46,11 @@ end
 -- home folder
 local HOME = os.getenv("HOME")
 
-local bar_width = 2
+local bar_width = 3
 local bar_color = "#a1a1a1"
 local bar_background_color = "#474747"--"#353535"
 local bar_margin_right = 2
-local bar_margin_top = 5
+local bar_margin_top = 6
 local bar_margin_bottom = 6
 
 
@@ -133,7 +133,7 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 
 -- {{{ Wibox
 -- Create a textclock widget
-mytextclock = awful.widget.textclock("%Y-%m-%d, %H:%M",60)
+mytextclock = awful.widget.textclock("%Y-%m-%d, %H:%M ",60)
 --mytextclock = awful.widget.textclock()
 
 

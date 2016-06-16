@@ -3,25 +3,38 @@
 ---------------------------
 pathToConfig = os.getenv("HOME") .. "/.config/awesome/customtheme/"
 
+local COLOR = {}
+COLOR.bg     = "#2d2d2d"
+COLOR.red    = "#fb4934"
+COLOR.blue   = "#458588"
+COLOR.orange = "#fe8019"
+COLOR.green  = "#b8bb26"
+COLOR.white  = "#ebdbb2"
+COLOR.gray   = "#928374"--"#a89984"
+COLOR.yellow = "#fabd2f"
+
+
+COLOR.MAIN = "#535d6c"
+COLOR.BACKGROUND = COLOR.bg
+
 theme = {}
+theme.font          = "ProggyCleanTTSZ 12"
+--theme.font          = "mono 8"
 
-theme.font          = "mono 8"
-
-theme.bg_normal     = "#2d2d2d"
-theme.bg_focus      = "#535d6c"
-theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#444444"
+theme.bg_normal     = COLOR.BACKGROUND   --"#2d2d2d"
+theme.bg_focus      = COLOR.MAIN --"#535d6c"
+theme.bg_urgent     = COLOR.red--"#ff0000"
+theme.bg_minimize   = "#1a1a1a"
 theme.bg_systray    = theme.bg_normal
 
 theme.fg_normal     = "#aaaaaa"
 theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+theme.fg_minimize   = COLOR.gray--"#ffffff"
 
-theme.border_width  = 1
---theme.border_normal = "#000000"
+theme.border_width  = 2
 theme.border_normal = "#1a1a1a"
-theme.border_focus  = "#ececec"--"#535d6c"
+theme.border_focus  = COLOR.MAIN--COLOR.MAIN--"#535d6c"
 theme.border_marked = "#91231c"
 
 -- There are other variable sets
@@ -96,6 +109,5 @@ theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
 -- Define the icon theme for application icons. If not set then the icons 
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
 theme.icon_theme = nil
-
 return theme
 -- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80

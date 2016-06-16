@@ -40,7 +40,8 @@ execute pathogen#infect()
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 let g:session_autoload = 'no'
 " use ag
@@ -57,6 +58,9 @@ else
             \ }
 endif
 
+" Use pdflatex
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats='pdf, aux'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
