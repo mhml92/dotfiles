@@ -194,7 +194,7 @@ set tabstop=3
 set list lcs=tab:\¦\ 
 
 " Linebreak on 80 characters
-set lbr
+"set lbr
 set tw=80
 
 set ai "Auto indent
