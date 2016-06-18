@@ -195,7 +195,7 @@ set list lcs=tab:\¦\
 
 " Linebreak on 80 characters
 "set lbr
-set tw=80
+"set tw=80
 
 set ai "Auto indent
 set si "Smart indent
