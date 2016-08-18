@@ -71,6 +71,10 @@ set history=700
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
+" stupid fucking python
+autocmd FileType python set tabstop=3|set shiftwidth=3|set noexpandtab!
+"autocmd FileType python3.5 set tabstop=3|set shiftwidth=3|set noexpandtab!
+
 
 " Set to auto read when a file is changed from the outside
 set autoread
