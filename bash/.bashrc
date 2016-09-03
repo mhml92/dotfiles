@@ -113,6 +113,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 alias ranger='source ~/.ranger/ranger.py ~/.ranger/ranger.py'
 alias tmux='tmux -2'

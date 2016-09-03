@@ -165,7 +165,9 @@ vicious.cache(vicious.widgets.net)
 vicious.register(
 netwidget, 
 vicious.widgets.net, 
-'${wlan0 down_mb}/${wlan0 up_mb}'
+--'${wlan0 down_mb}/${wlan0 up_mb}'
+--)
+'${wlp2s0 down_mb}/${wlp2s0 up_mb}'
 )
 
 --volume
@@ -713,7 +715,7 @@ run_once("nm-applet")
 run_once("gnome-settings-daemon")
 
 -- nvidia indicator
---run_once("prime-indicator")
+run_once("prime-indicator")
 
 -- dropbox
 run_once(HOME .. "/.dropbox-dist/dropboxd")
