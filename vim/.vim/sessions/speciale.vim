@@ -1,10 +1,8 @@
 " ~/.dotfiles/vim/.vim/sessions/speciale.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 18 August 2016 at 09:56:19.
+" Created by session.vim 2.13.1 on 06 September 2016 at 10:36:10.
 " Open this file in Vim and run :source % to restore your session.
 
-set guioptions=aegimrLtT
-silent! set guifont=
 if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
@@ -24,28 +22,28 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 src/TriangularMatrix.cpp
 badd +34 src/TransClust.cpp
+badd +1 src/TriangularMatrix.cpp
 badd +9 src/program.cpp
 badd +1 ~/Dropbox/Datalogi/Speciale/code/testProject/src/main.cpp
 badd +1 /var/www/html/costdata/src/Channel
-badd +37 include/TransClust.hpp
-badd +23 include/ConnectedComponent.hpp
+badd +36 include/TransClust.hpp
+badd +1 include/ConnectedComponent.hpp
 badd +1 src/ConnectedComponent.cpp
-badd +39 include/TriangularMatrix.hpp
-badd +69 include/FORCE.hpp
+badd +1 include/TriangularMatrix.hpp
+badd +1 include/FORCE.hpp
 badd +73 src/FORCE.cpp
-badd +25 include/FindConnectedComponents.hpp
+badd +1 include/FindConnectedComponents.hpp
 badd +1 src/FindConnectedComponents.cpp
 badd +2 src/ClusteringResult.cpp
 badd +1 src/Result.hpp
 badd +46 src/Result.cpp
-badd +9 include/Result.hpp
+badd +1 include/Result.hpp
 badd +632 lib/tclap/include/tclap/CmdLine.h
 badd +121 lib/tclap/include/tclap/ValueArg.h
 badd +64 lib/tclap/include/tclap/UnlabeledValueArg.h
 badd +1 include/ClusteringResult.hpp
-badd +18 include/FPT.hpp
+badd +1 include/FPT.hpp
 badd +1 src/FTP.cpp
 badd +13 src/FTP_old.cpp
 badd +29 src/FPT.cpp
@@ -55,38 +53,15 @@ badd +8 include/new_FTP.hpp
 badd +13 include/New_FPT.hpp
 badd +164 src/New_FTP.cpp
 badd +1 CMakeLists.txt
+argglobal
 silent! argdel *
-edit src/program.cpp
+edit CMakeLists.txt
 set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
 set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
-exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
 argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 9 - ((8 * winheight(0) + 35) / 70)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-9
-normal! 0
-wincmd w
-argglobal
-edit CMakeLists.txt
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -102,40 +77,13 @@ exe s:l
 normal! zt
 19
 normal! 0
-wincmd w
-exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
-exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
-tabedit include/TransClust.hpp
+tabedit src/TransClust.cpp
 set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
 set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 132 + 135) / 271)
-exe 'vert 2resize ' . ((&columns * 138 + 135) / 271)
 argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 64 - ((63 * winheight(0) + 35) / 70)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-64
-normal! 0
-wincmd w
-argglobal
-edit src/TransClust.cpp
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -154,9 +102,6 @@ exe s:l
 normal! zt
 157
 normal! 07|
-wincmd w
-exe 'vert 1resize ' . ((&columns * 132 + 135) / 271)
-exe 'vert 2resize ' . ((&columns * 138 + 135) / 271)
 tabedit include/DEBUG.hpp
 set splitbelow splitright
 set nosplitbelow
@@ -178,7 +123,7 @@ if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 63
-normal! 04|
+normal! 01|
 tabedit include/Result.hpp
 set splitbelow splitright
 wincmd _ | wincmd |
@@ -501,7 +446,7 @@ normal! 0
 wincmd w
 exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
 exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
-tabnext 1
+tabnext 2
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -518,7 +463,7 @@ let &so = s:so_save | let &siso = s:siso_save
 " by :mksession out of the box).
 
 1wincmd w
-tabnext 1
+tabnext 2
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

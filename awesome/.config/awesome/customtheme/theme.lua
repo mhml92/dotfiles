@@ -14,7 +14,7 @@ COLOR.gray   = "#928374"--"#a89984"
 COLOR.yellow = "#fabd2f"
 
 
-COLOR.MAIN = "#535d6c"
+COLOR.MAIN = "#d64937"--"#535d6c"
 COLOR.BACKGROUND = COLOR.bg
 
 theme = {}
@@ -32,7 +32,7 @@ theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = COLOR.gray--"#ffffff"
 
-theme.border_width  = 2
+theme.border_width  = 3
 theme.border_normal = "#1a1a1a"
 theme.border_focus  = COLOR.MAIN--COLOR.MAIN--"#535d6c"
 theme.border_marked = "#91231c"
@@ -56,8 +56,8 @@ theme.taglist_squares_unsel = pathToConfig .. "taglist/squarew.png"
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
 theme.menu_submenu_icon = pathToConfig .. "submenu.png"
-theme.menu_height = 15
-theme.menu_width  = 100
+theme.menu_height = 16
+theme.menu_width  = 128
 
 -- You can add as many variables as
 -- you wish and access them by using
@@ -104,7 +104,8 @@ theme.layout_tiletop = pathToConfig .. "layouts/tiletopw.png"
 theme.layout_spiral  = pathToConfig .. "layouts/spiralw.png"
 theme.layout_dwindle = pathToConfig .. "layouts/dwindlew.png"
 
-theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
+--theme.awesome_icon = "/usr/share/awesome/icons/awesome16.png"
+theme.awesome_icon = pathToConfig .. "awesome.png"
 
 -- Define the icon theme for application icons. If not set then the icons 
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.

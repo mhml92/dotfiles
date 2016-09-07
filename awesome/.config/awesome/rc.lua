@@ -51,7 +51,7 @@ local bar_color = "#a1a1a1"
 local bar_background_color = "#474747"--"#353535"
 local bar_margin_right = 2
 local bar_margin_top = 6
-local bar_margin_bottom = 6
+local bar_margin_bottom = 5
 
 
 -- Themes define colours, icons, font and wallpapers.
@@ -712,7 +712,7 @@ run_once("redshift-gtk")
 run_once("nm-applet")
 
 -- horizontal scrolling
-run_once("gnome-settings-daemon")
+run_once("unity-settings-daemon")
 
 -- nvidia indicator
 run_once("prime-indicator")
