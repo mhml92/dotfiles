@@ -32,3 +32,9 @@
 	path = vim/.vim/bundle/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
 	
+[submodule "vim/.vim/bundle/taglist.vim"]
+	path = vim/.vim/bundle/taglist.vim
+	url = https://github.com/vim-scripts/taglist.vim
+[submodule "vim/.vim/bundle/vim-love-docs"]
+	path = vim/.vim/bundle/vim-love-docs
+	url = https://github.com/davisdude/vim-love-docs.git

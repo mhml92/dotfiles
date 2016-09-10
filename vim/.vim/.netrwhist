@@ -1,10 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/var/www/mtocms/vendor/laravel'
-let g:netrw_dirhist_2='/var/www/mtocms/vendor/laravel/framework'
-let g:netrw_dirhist_3='/var/www/mtocms/vendor/laravel/framework/src'
-let g:netrw_dirhist_4='/var/www/mtocms/vendor/laravel/framework/src/Illuminate'
-let g:netrw_dirhist_5='/var/www/mtocms/vendor/laravel/framework/src/Illuminate/Database'
-let g:netrw_dirhist_6='/var/www/mtocms/vendor/laravel/framework/src/Illuminate/Database/Schema'
-let g:netrw_dirhist_7='/var/www/mtocms/database/migrations'
-let g:netrw_dirhist_8='/var/www/mtocms/app/Models'
+let g:netrw_dirhist_cnt =0

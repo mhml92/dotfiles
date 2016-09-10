@@ -43,6 +43,7 @@ execute pathogen#infect()
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 
+
 let g:session_autoload = 'no'
 " use ag
 let g:ctrlp_use_caching = 0
@@ -415,6 +416,8 @@ endfunction
 "endfunction
 "command! FormatCpp call FormatCodeCpp()
 
+" only show fucntions names in taglist for php
+let g:tlist_def_php_settings = 'php;c:class;f:function'
 
 
 " Don't close window, when deleting a buffer
