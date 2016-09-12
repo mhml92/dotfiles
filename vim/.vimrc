@@ -42,7 +42,8 @@ execute pathogen#infect()
 
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
-
+let g:lovedocs_colors = 'guifg=#ff60e2 ctermfg=206'
+let g:rainbow_active = 1 
 
 let g:session_autoload = 'no'
 " use ag

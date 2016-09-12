@@ -38,3 +38,6 @@
 [submodule "vim/.vim/bundle/vim-love-docs"]
 	path = vim/.vim/bundle/vim-love-docs
 	url = https://github.com/davisdude/vim-love-docs.git
+[submodule "vim/.vim/bundle/rainbow"]
+	path = vim/.vim/bundle/rainbow
+	url = https://github.com/luochen1990/rainbow.git

@@ -1,0 +1,1 @@
+../bundle/rainbow/plugin/rainbow.vim
