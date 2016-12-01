@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/mikkel/Dropbox/surf/games/love_engine/lib/middleclass'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/mikkel/Dropbox/Datalogi/Speciale/repo/transclust/data/results/test_run_2016-11-11--17-03-45'
+let g:netrw_dirhist_2='/home/mikkel/Dropbox/Datalogi/Speciale/repo/transclust/data/results/test_run_2016-11-11--09-54-17'
+let g:netrw_dirhist_3='/home/mikkel/Dropbox/Datalogi/Speciale/repo/transclust/old_files'

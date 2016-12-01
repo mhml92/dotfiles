@@ -5,7 +5,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="minimal"
+ZSH_THEME="my_minimal"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -85,6 +85,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias ranger='source ~/.dotfiles/ranger/.ranger/ranger.py ~/.dotfiles/ranger/.ranger/ranger.py' 
 alias tmux='tmux -2'
+alias alert='paplay /usr/share/sounds/ubuntu/stereo/dialog-question.ogg'
 
 source .dotfiles/vim/.vim/bundle/gruvbox/gruvbox_256palette.sh
 

@@ -142,7 +142,7 @@ memimg = wibox.widget.imagebox(HOME .. "/.config/awesome/myicons/mem.png")
 memimg:set_resize(false)
 
 memwidget = wibox.widget.textbox()
-vicious.register(memwidget, vicious.widgets.mem, "$1%",30)
+vicious.register(memwidget, vicious.widgets.mem, "$1%",1)
 
 -- battery
 batimg = wibox.widget.imagebox(HOME .. "/.config/awesome/myicons/bat_empty_01.png")

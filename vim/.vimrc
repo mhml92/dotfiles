@@ -40,6 +40,9 @@ execute pathogen#infect()
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+set foldmethod=syntax
+set foldnestmax=1
+
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:lovedocs_colors = 'guifg=#ff60e2 ctermfg=206'
@@ -48,7 +51,7 @@ let g:rainbow_active = 1
 let g:session_autoload = 'no'
 " use ag
 let g:ctrlp_use_caching = 0
-let g:ctrlp_working_path_mode = 'r'
+let g:ctrlp_working_path_mode = 'c'
 if executable('ag')
    set grepprg=ag\ --nogroup\ --nocolor
 

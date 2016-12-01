@@ -1,6 +1,6 @@
 " ~/.dotfiles/vim/.vim/sessions/speciale.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 11 September 2016 at 19:26:33.
+" Created by session.vim 2.13.1 on 01 December 2016 at 13:15:46.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=aegimrLtT
@@ -19,45 +19,72 @@ if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/Dropbox/Datalogi/Speciale/code/transclust
+cd ~/Dropbox/Datalogi/Speciale/repo/transclust
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +34 include/TransClust.hpp
-badd +19 CMakeLists.txt
-badd +34 src/TransClust.cpp
+badd +28 SETUP
+badd +48 .ycm_extra_conf.py
+badd +63 CMakeLists.txt
+badd +65 ~/Dropbox/Datalogi/Speciale/ref_code/netgale/CMakeLists.txt
+badd +73 src/TransClust.cpp
+badd +54 include/transclust/TransClust.hpp
+badd +28 ~/Dropbox/Datalogi/Speciale/code/transclustr/src/TransClust.cpp
+badd +1 ~/Dropbox/Datalogi/Speciale/code/transclustr/src/ConnectedComponent.hpp
+badd +140 include/transclust/ConnectedComponent.hpp
+badd +22 src/ConnectedComponent.cpp
+badd +1 include/transclust/TriangularMatrix.hpp
+badd +1 ~/Dropbox/Datalogi/Speciale/code/transclustr/src/TriangularMatrix.cpp
+badd +1 include/transclust/FindConnectedComponents.hpp
+badd +2 ~/Dropbox/Datalogi/Speciale/code/transclustr/src/FindConnectedComponents.cpp
+badd +1 ~/Dropbox/Datalogi/Speciale/code/transclustr/src/FPT.hpp
+badd +44 include/transclust/FPT.hpp
+badd +6 ~/Dropbox/Datalogi/Speciale/code/transclustr/src/FPT.cpp
+badd +35 src/FindConnectedComponents.cpp
+badd +1 src/FPT.cpp
 badd +1 src/TriangularMatrix.cpp
-badd +9 src/program.cpp
-badd +1 ~/Dropbox/Datalogi/Speciale/code/testProject/src/main.cpp
-badd +1 /var/www/html/costdata/src/Channel
-badd +23 include/ConnectedComponent.hpp
-badd +1 src/ConnectedComponent.cpp
-badd +39 include/TriangularMatrix.hpp
-badd +68 include/FORCE.hpp
-badd +73 src/FORCE.cpp
-badd +1 include/FindConnectedComponents.hpp
-badd +1 src/FindConnectedComponents.cpp
-badd +2 src/ClusteringResult.cpp
-badd +1 src/Result.hpp
-badd +46 src/Result.cpp
-badd +12 include/Result.hpp
-badd +632 lib/tclap/include/tclap/CmdLine.h
-badd +121 lib/tclap/include/tclap/ValueArg.h
-badd +64 lib/tclap/include/tclap/UnlabeledValueArg.h
-badd +1 include/ClusteringResult.hpp
-badd +20 include/FPT.hpp
-badd +1 src/FTP.cpp
-badd +13 src/FTP_old.cpp
-badd +29 src/FPT.cpp
-badd +71 include/DEBUG.hpp
-badd +1 src/new_FTP.cpp
-badd +8 include/new_FTP.hpp
-badd +13 include/New_FPT.hpp
-badd +164 src/New_FTP.cpp
+badd +3 include/transclust/FORCE.hpp
+badd +23 src/FORCE.cpp
+badd +1 include/transclust/Result.hpp
+badd +1 src/Result.cpp
+badd +41 include/transclust/ClusteringResult.hpp
+badd +254 src/program.cpp
+badd +393 src/tccli.cpp
+badd +70 ~/Dropbox/Datalogi/Speciale/code/transclustr/src/ConnectedComponent.cpp
+badd +2 ~/Dropbox/Datalogi/Speciale/code/transclustr/inst/include/transclust/FindConnectedComponents.hpp
+badd +19 src/tc/FORCE.cpp
+badd +119 src/tc/TransClust.cpp
+badd +7 src/tc/ConnectedComponent.cpp
+badd +1 src/tc/FindConnectedComponents.cpp
+badd +4 src/tc/FPT.cpp
+badd +35 src/tc/TriangularMatrix.cpp
+badd +1 src/tc/Result.cpp
+badd +19 include/transclust/DynamicUnionFind.hpp
+badd +4 src/DynamicUnionFind.cpp
+badd +1 include/transclust/Common.hpp
+badd +1 src/tc/DynamicUnionFind.cpp
+badd +1 include/transclust/DEBUG.hpp
+badd +1 ~/Dropbox/Datalogi/Speciale/code/transclust/include/transclust/FORCE.hpp
+badd +1 ~/Dropbox/Datalogi/Speciale/code/transclust/src/tc/FORCE.cpp
+badd +1 ~/Dropbox/Datalogi/Speciale/code/transclust/include/transclust/FPT.hpp
+badd +1 ~/Dropbox/Datalogi/Speciale/code/transclust/src/tc/FPT.cpp
+badd +1 ~/Dropbox/Datalogi/Speciale/code/transclust/include/transclust/TriangularMatrix.hpp
+badd +1 ~/Dropbox/Datalogi/Speciale/code/transclust/src/tc/TriangularMatrix.cpp
+badd +1 ~/Dropbox/Datalogi/Speciale/code/transclust/include/transclust/DEBUG.hpp
+badd +2 src/tc/CMakeLists.txt
+badd +1 src/tc/InputParser.cpp
+badd +60 include/transclust/InputParser.hpp
+badd +33 include/transclust/SimilarityData.hpp
+badd +3 src/SimilarityData.cpp
+badd +1 src/tc/SimilarityData.cpp
+badd +76 ~/rand.txt
+badd +244 src/cluster_cost.cpp
+badd +26 old_files/FindConnectedComponents.cpp
+badd +1 README.md
 argglobal
 silent! argdel *
-edit CMakeLists.txt
+edit SETUP
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -67,46 +94,44 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
+exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
 argglobal
-setlocal fdm=manual
+setlocal fdm=syntax
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
-setlocal fdn=20
+setlocal fdn=1
 setlocal fen
-silent! normal! zE
-let s:l = 19 - ((18 * winheight(0) + 35) / 70)
+let s:l = 9 - ((8 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-19
+9
 normal! 0
 wincmd w
 argglobal
-edit src/program.cpp
-setlocal fdm=manual
+edit README.md
+setlocal fdm=syntax
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
-setlocal fdn=20
+setlocal fdn=1
 setlocal fen
-silent! normal! zE
-let s:l = 226 - ((21 * winheight(0) + 35) / 70)
+let s:l = 55 - ((54 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-226
-normal! 07|
+55
+normal! 021|
 wincmd w
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-tabedit include/TransClust.hpp
+exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
+tabedit CMakeLists.txt
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -116,8 +141,8 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 134 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 138 + 136) / 273)
+exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
 argglobal
 setlocal fdm=manual
 setlocal fde=0
@@ -128,204 +153,64 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 44 - ((43 * winheight(0) + 35) / 70)
+let s:l = 63 - ((62 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-44
-normal! 017|
-wincmd w
-argglobal
-edit src/TransClust.cpp
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 76 - ((7 * winheight(0) + 35) / 70)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-76
-normal! 0
-wincmd w
-2wincmd w
-exe 'vert 1resize ' . ((&columns * 134 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 138 + 136) / 273)
-tabedit include/Result.hpp
-set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 4 - ((3 * winheight(0) + 35) / 70)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-4
-normal! 04|
-wincmd w
-argglobal
-edit src/Result.cpp
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 73 - ((32 * winheight(0) + 35) / 70)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-73
-normal! 07|
-wincmd w
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-tabedit include/FPT.hpp
-set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 20 - ((7 * winheight(0) + 35) / 70)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-20
+63
 normal! 0
 wincmd w
 argglobal
-edit src/FPT.cpp
-setlocal fdm=manual
+edit src/tccli.cpp
+setlocal fdm=syntax
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
-setlocal fdn=20
+setlocal fdn=1
 setlocal fen
-silent! normal! zE
-let s:l = 366 - ((67 * winheight(0) + 35) / 70)
+18
+silent! normal! zo
+30
+silent! normal! zo
+300
+silent! normal! zo
+385
+silent! normal! zo
+437
+silent! normal! zo
+let s:l = 281 - ((22 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-366
-normal! 0
+281
+normal! 041|
 wincmd w
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-tabedit include/ClusteringResult.hpp
+exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
+tabedit src/cluster_cost.cpp
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
 argglobal
-setlocal fdm=manual
+setlocal fdm=syntax
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
-setlocal fdn=20
+setlocal fdn=1
 setlocal fen
-silent! normal! zE
-let s:l = 12 - ((11 * winheight(0) + 35) / 70)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-12
-normal! 026|
-tabedit include/FindConnectedComponents.hpp
-set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
 let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
 normal! 0
-wincmd w
-argglobal
-edit src/FindConnectedComponents.cpp
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 54 - ((53 * winheight(0) + 35) / 70)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-54
-normal! 07|
-wincmd w
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-tabedit include/FORCE.hpp
+tabedit include/transclust/TransClust.hpp
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
@@ -335,155 +220,376 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
+exe 'vert 1resize ' . ((&columns * 132 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 138 + 135) / 271)
 argglobal
-setlocal fdm=manual
+setlocal fdm=syntax
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=1
 setlocal fml=1
-setlocal fdn=20
+setlocal fdn=1
 setlocal fen
-silent! normal! zE
-let s:l = 68 - ((45 * winheight(0) + 35) / 70)
+let s:l = 48 - ((47 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-68
-normal! 023|
-wincmd w
-argglobal
-edit src/FORCE.cpp
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-33,180fold
-199,256fold
-33
-silent! normal! zo
-199
-silent! normal! zo
-let s:l = 31 - ((30 * winheight(0) + 35) / 70)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-31
-normal! 010|
-wincmd w
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-tabedit include/ConnectedComponent.hpp
-set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 23 - ((22 * winheight(0) + 35) / 70)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-23
+48
 normal! 07|
 wincmd w
 argglobal
-edit src/ConnectedComponent.cpp
-setlocal fdm=manual
+edit src/tc/TransClust.cpp
+setlocal fdm=syntax
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=1
 setlocal fml=1
-setlocal fdn=20
+setlocal fdn=1
 setlocal fen
-silent! normal! zE
-let s:l = 46 - ((45 * winheight(0) + 35) / 70)
+let s:l = 63 - ((62 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-46
-normal! 010|
-wincmd w
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-tabedit include/TriangularMatrix.hpp
-set splitbelow splitright
-wincmd _ | wincmd |
-vsplit
-1wincmd h
-wincmd w
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 39 - ((38 * winheight(0) + 35) / 70)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-39
+63
 normal! 013|
 wincmd w
+exe 'vert 1resize ' . ((&columns * 132 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 138 + 135) / 271)
+tabedit include/transclust/InputParser.hpp
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
 argglobal
-edit src/TriangularMatrix.cpp
-setlocal fdm=manual
+setlocal fdm=syntax
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
-setlocal fdn=20
+setlocal fdn=1
 setlocal fen
-silent! normal! zE
-let s:l = 38 - ((37 * winheight(0) + 35) / 70)
+14
+silent! normal! zo
+let s:l = 49 - ((48 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-38
+49
+normal! 010|
+wincmd w
+argglobal
+edit src/tc/InputParser.cpp
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+16
+silent! normal! zo
+29
+silent! normal! zo
+41
+silent! normal! zo
+let s:l = 53 - ((40 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+53
+normal! 057|
+wincmd w
+2wincmd w
+exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
+tabedit include/transclust/ConnectedComponent.hpp
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 132 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 138 + 135) / 271)
+argglobal
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+25
+silent! normal! zo
+let s:l = 140 - ((7 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+140
 normal! 0
 wincmd w
-exe 'vert 1resize ' . ((&columns * 136 + 136) / 273)
-exe 'vert 2resize ' . ((&columns * 136 + 136) / 273)
-tabnext 2
+argglobal
+edit src/tc/ConnectedComponent.cpp
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=1
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+let s:l = 576 - ((7 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+576
+normal! 0
+wincmd w
+exe 'vert 1resize ' . ((&columns * 132 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 138 + 135) / 271)
+tabedit include/transclust/Common.hpp
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+13
+silent! normal! zo
+let s:l = 78 - ((62 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+78
+normal! 082|
+tabedit include/transclust/ClusteringResult.hpp
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=1
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+let s:l = 78 - ((57 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+78
+normal! 013|
+tabedit include/transclust/FORCE.hpp
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 132 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 138 + 135) / 271)
+argglobal
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+9
+silent! normal! zo
+let s:l = 3 - ((2 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+3
+normal! 0
+wincmd w
+argglobal
+edit src/tc/FORCE.cpp
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+25
+silent! normal! zo
+let s:l = 11 - ((10 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+11
+normal! 0
+wincmd w
+exe 'vert 1resize ' . ((&columns * 132 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 138 + 135) / 271)
+tabedit include/transclust/DynamicUnionFind.hpp
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
+argglobal
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+6
+silent! normal! zo
+let s:l = 19 - ((18 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+19
+normal! 02|
+wincmd w
+argglobal
+edit src/tc/DynamicUnionFind.cpp
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+14
+silent! normal! zo
+50
+silent! normal! zo
+59
+silent! normal! zo
+let s:l = 18 - ((17 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+18
+normal! 0
+wincmd w
+exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
+tabedit include/transclust/DEBUG.hpp
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+argglobal
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+10
+silent! normal! zo
+let s:l = 42 - ((8 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+42
+normal! 0
+tabedit include/transclust/FPT.hpp
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winheight=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
+argglobal
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+14
+silent! normal! zo
+let s:l = 44 - ((43 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+44
+normal! 0
+wincmd w
+argglobal
+edit src/tc/FPT.cpp
+setlocal fdm=syntax
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=1
+setlocal fml=1
+setlocal fdn=1
+setlocal fen
+let s:l = 317 - ((62 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+317
+normal! 0
+wincmd w
+exe 'vert 1resize ' . ((&columns * 135 + 135) / 271)
+exe 'vert 2resize ' . ((&columns * 135 + 135) / 271)
+tabnext 5
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
 endif
 " unlet! s:wipebuf
-set winheight=1 winwidth=20 shortmess=filnxtToO
+set winheight=1 winwidth=20 shortmess=filnxtToOc
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if file_readable(s:sx)
   exe "source " . fnameescape(s:sx)
@@ -495,7 +601,7 @@ let &so = s:so_save | let &siso = s:siso_save
 " by :mksession out of the box).
 
 2wincmd w
-tabnext 2
+tabnext 5
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')
