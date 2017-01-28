@@ -42,6 +42,7 @@ execute pathogen#infect()
 
 set foldmethod=syntax
 set foldnestmax=1
+let php_sql_query=1
 
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
